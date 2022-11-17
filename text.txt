@@ -1,0 +1,23 @@
+1.2 Illumination Invariant Face Recognition
+In addition to face pose, illumination is the next most significant factor affecting the appearance
+of faces. Ambient lighting changes greatly within and between days and among indoor and outdoor
+environments. Due to the 3D structure of the face, a direct lighting source can cast strong
+shadows that accentuate or diminish certain facial features. It has been shown experimentally
+[2] and theoretically for systems based on principal component analysis (PCA) [50] that differences
+in appearance induced by illumination are larger than differences between individuals.
+Because dealing with illumination variation is a central topic in computer vision, numerous
+approaches for illumination invariant face recognition have been proposed.
+Early work in illumination invariant face recognition focused on image representations that
+are mostly insensitive to changes in illumination. In one study [2] various image representations
+and distance measures were evaluated on a tightly controlled face database that varied
+the face pose, illumination, and expression. The image representations include edge maps, 2D
+Gabor-like filters, first and second derivatives of the gray-level image, and the logarithmic transformations
+of the intensity image along with these representations. However, none of the image
+representations was found to be sufficient by itself to overcome variations due to illumination
+changes. In more recent work it was shown that the ratio of two images from the same object
+is simpler than the ratio of images from different objects [27]. In limited experiments this
+method outperformed both correlation and PCA but did not perform as well as the illumination
+cone method described below. A related line of work attempted to extract the object’s surface
+reflectance as an illumination invariant description of the object [25, 30]. We discuss the most
+recent algorithm in this area in more detail in Section 4.2. Sashua and Riklin-Raviv [44] proposed
+a different illumination invariant image representation, the quotient image.
